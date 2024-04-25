@@ -33,7 +33,7 @@ def getdata(name):
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         path = self.path
-        user = path.split('?')[1]
+        user = 'Yonagi04'
         data = getdata(user)
         self.send_response(200)
         self.send_header('Access-Control-Allow-Origin', '*')
